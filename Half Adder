@@ -6,11 +6,11 @@ Functionality:
 
 The Sum (S) output represents the least significant bit (LSB) of the binary addition result.
 The Carry (C) output indicates whether there was a carry-over from adding the two input bits. This carry bit will be used in subsequent additions for multi-bit numbers.
-Implementation:
 
+Implementation:
 The half adder can be implemented with two basic logic gates:
 
-XOR gate: This gate performs an exclusive OR operation on the two input bits (A and B). The output of the XOR gate is:
+XOR gate performs an exclusive OR operation on the two input bits (A and B). The output of the XOR gate is:
 1: If the input bits are different (one is 0 and the other is 1)
 0: If the input bits are the same (both 0 or both 1)
 AND gate: This gate performs an AND operation on the two input bits. The output of the AND gate is:
@@ -18,21 +18,17 @@ AND gate: This gate performs an AND operation on the two input bits. The output 
 0: Otherwise
 Truth Table:
 
-A	B	Sum (S)	Carry (C)
-0	0	0	0
-0	1	1	0
-1	0	1	0
-1	1	0	1
+A	B 	Sum (S)	Carry (C)
+0	0	    0     0
+0	1	    1	    0
+1	0	    1	    0
+1	1	    0	    1
+
 Limitations:
-
-The half adder can only add two single-bit binary numbers.
+The half-adder can only add two single-bit binary numbers.
 It cannot handle carry-in from previous additions, limiting its use for multi-bit addition.
-Applications:
 
+Applications:
 Half adders are used as building blocks for full adders, which can handle carry-in and enable multi-bit addition.
 They are also used in various digital circuits, such as encoders, decoders, and arithmetic logic units (ALUs).
-Additional Notes:
 
-The half adder can also be implemented using other logic gates besides XOR and AND, but these are the most common and efficient representations.
-Understanding the half adder is crucial for comprehending more complex digital circuits that perform arithmetic operations.
-I hope this explanation clarifies the concept of a half adder in technical terms. Feel free to ask any further questions you might have!
